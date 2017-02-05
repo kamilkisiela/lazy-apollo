@@ -14,7 +14,7 @@ export class MoviesComponent implements OnInit {
   constructor(private apollo: Apollo) { }
 
   ngOnInit() {
-    this.movies = this.apollo.watchQuery<any>({
+    this.movies = this.apollo.use('movies').watchQuery<any>({
       query: gql`
         query allMovies {
           allMovies {

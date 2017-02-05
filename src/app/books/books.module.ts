@@ -4,13 +4,14 @@ import { ApolloModule } from 'apollo-angular';
 
 import { BooksRoutingModule } from './books-routing.module';
 import { BooksComponent } from './books.component';
-import { provideClient } from './apollo';
+// import { provideClient } from './apollo';
 
 @NgModule({
   imports: [
     CommonModule,
     BooksRoutingModule,
-    ApolloModule.forRoot(provideClient),
+    // ApolloModule.forRoot(provideClient),
+    ApolloModule,
   ],
   declarations: [BooksComponent]
 })

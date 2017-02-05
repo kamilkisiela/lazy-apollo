@@ -4,13 +4,14 @@ import { ApolloModule } from 'apollo-angular';
 
 import { MoviesRoutingModule } from './movies-routing.module';
 import { MoviesComponent } from './movies.component';
-import { provideClient } from './apollo';
+// import { provideClient } from './apollo';
 
 @NgModule({
   imports: [
     CommonModule,
     MoviesRoutingModule,
-    ApolloModule.forRoot(provideClient),
+    // ApolloModule.forRoot(provideClient),
+    ApolloModule
   ],
   declarations: [MoviesComponent]
 })

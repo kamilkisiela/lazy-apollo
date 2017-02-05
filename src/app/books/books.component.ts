@@ -14,7 +14,7 @@ export class BooksComponent implements OnInit {
   constructor(private apollo: Apollo) { }
 
   ngOnInit() {
-    this.books = this.apollo.watchQuery<any>({
+    this.books = this.apollo.use('books').watchQuery<any>({
       query: gql`
         query allBooks {
           allBooks {
