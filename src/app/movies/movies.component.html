@@ -1,0 +1,7 @@
+<p>Movies</p>
+
+<ul>
+  <li *ngFor="let movie of movies | async | select: 'allMovies'">
+    {{movie.title}}
+  </li>
+</ul>

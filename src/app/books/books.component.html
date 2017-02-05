@@ -1,0 +1,7 @@
+<p>Books</p>
+
+<ul>
+  <li *ngFor="let book of books | async | select: 'allBooks'">
+    {{book.title}}
+  </li>
+</ul>
